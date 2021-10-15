@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+  <style>
+
+@font-face {
+    font-family: Aero_HSEFonts_Vrublevskaya;
+    src: url(fonts/Aero_HSEFonts_Vrublevskaya.ttf);
+
+   }
+
+@font-face {
+       font-family:MyriadPro-Regular;
+       src: url(fonts/MyriadPro-Regular.otf); }
+
+
+
+
+
+body {
+                background: url(media/bg.png) no-repeat 0px 0px;
+                background-size: cover;
+
+           }
+
+
+
+.pix0{
+             margin-left: 26%;
+             margin-top: 2%;
+             width: 50%;
+             height: 50%;
+           }
+
+.pix1{
+  margin-left: 37%;
+  margin-top: 6%;
+  width: 20%;
+  height: 20%;
+
+}
+
+.pix2 {
+      width: 50%;
+      height: 50%;
+      margin-left: 25%;
+      margin-top: 65%;
+      }
+
+.pix3 {
+  margin-left: 8%;
+  width: 58%;
+  height: 58%;
+}
+
+
+
+.txt1 {
+       margin-left: 20%;
+       margin-top: -27%;
+       font-family: Aero_HSEFonts_Vrublevskaya;
+       font-size: 130%;
+       font-weight: lighter;
+      }
+
+.txt2 {
+  font-family: MyriadPro-Regular ;
+  font-size: 120%;
+  color: white;
+  margin-top: -136%;
+  margin-left: 35%
+}
+
+.cv{
+
+  margin-left: 60%;
+  margin-top: -20%;
+}
+
+.inf {
+  margin-left: 60%;
+  margin-top: 1%;
+
+}
+
+
+
+
+
+  </style>
+
+  <body>
+
+
+
+<img class="pix0" src="media/ogl.png" alt="">
+<img class="pix1"src="media/cover.png" alt="">
+<div class="cv">
+
+
+    <div id="cv">
+
+       <img src="media/cd.png" width="" height="">
+
+   </div>
+
+</div>
+<div class="inf">
+
+
+    <div id="inf">
+
+       <img src="media/info.png" width="" height="">
+
+   </div>
+
+</div>
+<img class="pix2" src="media/lap.png" alt="">
+<img class="pix3" src="media/post.png" alt="">
+
+<audio id=vc1>
+
+       <source src="media/b1.mp3" type="audio/mpeg"> </audio>
+
+<audio id=inf1>
+
+       <source src="media/info.mp3" type="audio/mpeg"> </audio>
+
+
+
+
+
+
+
+<p class="txt1">
+я погружаюсь в воду так глубоко, как только возможно, и я не хочу, чтобы это состояние заканчивалось.<br>
+Я пытаюсь найти место, где, как я помню, мне нравилось быть раньше, но ничего не нахожу.<br>
+Однако все выглядит так же, как несколько лет назад.<br>
+С каждым вдохом мое дыхание становится глубже.<br>
+Мое тело начинает покрываться льдом.<br>
+Мне очень холодно, и в этот момент я чувствую, что мне не хватает воздуха.<br>
+В голове появляется голос, который говорит моим родителям, что это мои последние мгновения, а потом я засыпаю.
+</p>
+
+<p class= "txt2"> .возможностьглубины </p>
+
+<script>
+
+    var cv = document.getElementById('cv'),
+        vc1 = document.getElementById('vc1');
+
+        cv.addEventListener('click', fPlay, false);
+        function fPlay() {
+        vc1.play();
+    }
+
+
+
+</script>
+
+<script>
+var inf = document.getElementById('inf'),
+    inf1 = document.getElementById('inf1');
+
+    inf.addEventListener('click', fPlay, false);
+    function fPlay() {
+    inf1.play();
+}
+</script>
+
+
+
+
+  </body>
+
+
+</html>
